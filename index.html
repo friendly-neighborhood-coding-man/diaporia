@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIAPORIA: AI that plans before it acts</title>
+  <meta name="description" content="A deliberate multi-model AI system that turns intent into verified plans and controlled execution.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141a24" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="DIAPORIA: AI that plans before it acts">
+  <meta property="og:description" content="A deliberate multi-model AI system that turns intent into verified plans and controlled execution.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="DIAPORIA home">
+        <svg class="mark" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false">
+          <circle cx="8.5" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <rect class="mark-gate" x="15" y="5" width="2.5" height="22" rx="1"/>
+          <rect x="21" y="11" width="10" height="10" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="wordmark">DIAPORIA</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-list">
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#example">Example</a></li>
+          <li><a href="#status">Status</a></li>
+          <li><a href="https://github.com/friendly-neighborhood-coding-man/diaporia">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
+        <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>In active development</p>
+        <h1 id="hero-title">AI that plans<br> before it acts.</h1>
+        <p class="hero-lede">A deliberate multi-model AI system that turns intent into verified plans and controlled execution.</p>
+        <p class="hero-body">Describe what you want done. DIAPORIA works out what it needs to know, builds a plan, verifies the important parts, asks before consequential actions, and confirms what actually happened.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#how-it-works">See how it works</a>
+          <a class="button button-secondary" href="https://github.com/friendly-neighborhood-coding-man/diaporia">View on GitHub</a>
+        </div>
+        </div>
+        <div class="hero-sequence" aria-hidden="true">
+          <span class="hs hs-think">Understand</span>
+          <span class="hs hs-think">Plan</span>
+          <span class="hs hs-think">Verify</span>
+          <span class="hs-gate"></span>
+          <span class="hs hs-act">Act</span>
+          <span class="hs hs-act">Confirm</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem" aria-labelledby="problem-title">
+      <div class="wrap split">
+        <h2 id="problem-title" class="split-title">Answering is not the same as doing.</h2>
+        <div class="split-body prose">
+          <p class="lead">Most AI tools are good at answering. Real work is harder.</p>
+          <p>To get something done for you, a system may need to:</p>
+          <ul class="needs">
+            <li>understand intent you only partly stated</li>
+            <li>discover the information it is missing</li>
+            <li>decide what actually matters</li>
+            <li>form a plan, and check it</li>
+            <li>act through tools</li>
+            <li>verify the effect those actions had</li>
+          </ul>
+          <p>A single fluent answer covers none of that. DIAPORIA is not another chat interface. It turns what you ask for into structured work that can be inspected and verified before anything is executed, and executed only within explicit limits.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="how-it-works" aria-labelledby="flow-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="flow-title">How DIAPORIA works</h2>
+          <p>Five stages, in order. The first three happen before anything outside the system changes. The line in the middle is where DIAPORIA stops to check, and to ask you when it matters.</p>
+        </div>
+
+        <div class="flow">
+          <div class="flow-side flow-side-think">
+            <p class="flow-side-label">Before any effect</p>
+            <ol class="flow-stages">
+              <li class="stage">
+                <span class="stage-num" aria-hidden="true">1</span>
+                <h3>Understand</h3>
+                <p>Find the real task, its constraints and the information that is missing.</p>
+              </li>
+              <li class="stage">
+                <span class="stage-num" aria-hidden="true">2</span>
+                <h3>Plan</h3>
+                <p>Turn intent into an inspectable sequence of work.</p>
+              </li>
+              <li class="stage">
+                <span class="stage-num" aria-hidden="true">3</span>
+                <h3>Verify</h3>
+                <p>Check evidence, assumptions and prepared results before acting.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="gate" role="note" aria-label="Approval boundary">
+            <span class="gate-line" aria-hidden="true"></span>
+            <p class="gate-text">Checks pass, and you approve where it matters.</p>
+          </div>
+
+          <div class="flow-side flow-side-act">
+            <p class="flow-side-label">Effects, within limits</p>
+            <ol class="flow-stages" start="4">
+              <li class="stage">
+                <span class="stage-num" aria-hidden="true">4</span>
+                <h3>Act</h3>
+                <p>Perform permitted actions through bounded execution paths.</p>
+              </li>
+              <li class="stage">
+                <span class="stage-num" aria-hidden="true">5</span>
+                <h3>Confirm</h3>
+                <p>Check the real effect instead of assuming it succeeded.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <p class="footnote">Which actions DIAPORIA can take is deliberately limited, and grows only as each kind of action can be checked and confirmed. See <a href="#status">current status</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="deliberate" aria-labelledby="deliberate-title">
+      <div class="wrap split">
+        <h2 id="deliberate-title" class="split-title">Deliberate by design</h2>
+        <div class="split-body prose">
+          <p class="lead">DIAPORIA separates reasoning from action.</p>
+          <p>Producing a plan does not give a model the authority to carry it out. Between the plan and its effect, important operations can require:</p>
+          <dl class="controls">
+            <div><dt>Structured actions</dt><dd>Each step is a defined action with stated inputs, not free-form text that happens to run.</dd></div>
+            <div><dt>Explicit checks</dt><dd>Prepared results are checked before they leave the system.</dd></div>
+            <div><dt>Your approval</dt><dd>Consequential steps wait for you to say yes.</dd></div>
+            <div><dt>Bounded execution</dt><dd>Actions run within limits set before they start.</dd></div>
+            <div><dt>Confirmation afterwards</dt><dd>The outcome is checked, not inferred from the absence of an error.</dd></div>
+          </dl>
+          <p>None of this makes a system infallible. It makes its work visible, and it makes mistakes easier to catch before they matter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="multi-model" aria-labelledby="models-title">
+      <div class="wrap split">
+        <h2 id="models-title" class="split-title">Multi-model by design</h2>
+        <div class="split-body prose">
+          <p class="pull">The model is a resource. The job comes first.</p>
+          <p>Different models are good at different things. DIAPORIA is designed so that the task, and the role a model plays within it, decide which model is useful, rather than tying the whole system to a single provider.</p>
+          <p>Which models and providers are available depends on how DIAPORIA is set up and will change as development continues.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section example-section" id="example" aria-labelledby="example-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="example-title">A workflow it is being built for</h2>
+          <p>A recurring job from our own week. It shows the kind of work DIAPORIA is being built to handle, not a feature that runs end to end today.</p>
+        </div>
+
+        <figure class="request">
+          <blockquote>
+            <p>Every Monday I have a team meeting at 10. Start reviewing last week’s GitHub issues two hours before, prepare a briefing 30 minutes before the meeting, and save it to my Desktop.</p>
+          </blockquote>
+          <figcaption>The request, as written</figcaption>
+        </figure>
+
+        <ol class="trace" aria-label="What DIAPORIA would need to do">
+          <li><span class="trace-when">Now</span><span class="trace-what">Understand the schedule: Mondays, 10:00, with two working times derived from it.</span></li>
+          <li><span class="trace-when">08:00</span><span class="trace-what">Retrieve evidence: last week’s issues from the right repositories.</span></li>
+          <li><span class="trace-when">08:00</span><span class="trace-what">Review the issues: what changed, what is blocked, what needs a decision.</span></li>
+          <li><span class="trace-when">by 09:30</span><span class="trace-what">Prepare the briefing.</span></li>
+          <li><span class="trace-when">09:30</span><span class="trace-what">Verify the artifact: does every point trace back to an issue it cites?</span></li>
+          <li class="trace-gate"><span class="trace-when">09:30</span><span class="trace-what">Ask before the external effect: writing a file to your Desktop.</span></li>
+          <li><span class="trace-when">09:30</span><span class="trace-what">Save the briefing.</span></li>
+          <li><span class="trace-when">09:30</span><span class="trace-what">Confirm the file exists and holds what was verified.</span></li>
+        </ol>
+
+        <p class="footnote">Recurring scheduling and retrieval from GitHub are still in progress. The checking, approval and confirmation steps are the parts in development now.</p>
+      </div>
+    </section>
+
+    <section class="section" id="status" aria-labelledby="status-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="status-title">Current status</h2>
+          <p>DIAPORIA is under active development. There is no public release yet. This is where things stand.</p>
+        </div>
+
+        <div class="status-grid">
+          <div class="status-col">
+            <h3>Working in development</h3>
+            <ul>
+              <li>Structured intent and planning, under active implementation.</li>
+              <li>Prepared results can be checked before any external effect.</li>
+              <li>Bounded execution for local files.</li>
+              <li>Effects are confirmed after execution rather than assumed.</li>
+            </ul>
+          </div>
+          <div class="status-col status-col-progress">
+            <h3>In progress</h3>
+            <ul>
+              <li>Recurring, scheduled workflows.</li>
+              <li>A broader range of external actions.</li>
+              <li>Role-specific reasoning and correction.</li>
+              <li>Deeper interaction and audit flows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="principles-title">Principles</h2>
+          <p>What DIAPORIA is built to hold to. They are principles, not guarantees.</p>
+        </div>
+        <dl class="principles">
+          <div><dt>Reason before acting</dt><dd>Ambiguity is not turned directly into execution.</dd></div>
+          <div><dt>Evidence over confidence</dt><dd>A fluent answer is not the same as verified knowledge.</dd></div>
+          <div><dt>Authority is bounded</dt><dd>Planning something does not grant permission to do it.</dd></div>
+          <div><dt>Verify the effect</dt><dd>Success means the intended result actually occurred.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section closing" id="updates" aria-labelledby="updates-title">
+      <div class="wrap">
+        <h2 id="updates-title">Follow along</h2>
+        <p>Follow DIAPORIA’s public progress, documentation and releases on GitHub.</p>
+        <div class="actions">
+          <a class="button button-primary" href="https://github.com/friendly-neighborhood-coding-man/diaporia">View DIAPORIA on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">DIAPORIA</p>
+      <ul class="footer-list">
+        <li><a href="https://github.com/friendly-neighborhood-coding-man/diaporia">GitHub</a></li>
+        <li>Status: active development</li>
+        <li>© 2026 DIAPORIA. All rights reserved.</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
